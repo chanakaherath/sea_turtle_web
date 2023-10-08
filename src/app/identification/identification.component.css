@@ -1,0 +1,77 @@
+/* #GlobalStyles: Styles that affect the entire page. */
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #0099CC; /* A shade of blue */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('tur.jpg'); /* background image of sea turtles */
+    background-size: cover;
+    background-position: center;
+}
+
+/* #MainContainerStyling: Styles for the main content container. */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8); /* Slight white overlay for readability */
+    padding: 20px;
+}
+
+/* #InfoSectionStyling: Styles for the information section about sea turtles. */
+.info-section {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* #UploadContainerStyling: Styles for the image upload container. */
+.upload-container {
+    background-color: rgba(0, 153, 204, 0.8); /* A transparent blue overlay */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+/* #UploadBoxStyling: Styles for the file chooser section. */
+.upload-box {
+    position: relative;
+}
+
+/* #InputFileStyling: Styles for the input file element. */
+.inputfile {
+    display: none;
+}
+
+/* #UploadLabelStyling: Styles for the label which prompts users to choose a file. */
+.upload-label {
+    display: inline-block;
+    background-color: #006699; /* A darker shade of blue */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* #ButtonStyling: Styles for the upload button. */
+.upload-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #004466; /* Even darker shade of blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* #ButtonHoverStyling: Styles for the upload button when hovered. */
+.upload-btn:hover {
+    background-color: #003344;
+}

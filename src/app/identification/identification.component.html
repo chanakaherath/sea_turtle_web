@@ -1,1 +1,36 @@
-<p>identification works!</p>
+
+    <!-- #MainContainer: This contains the entire content of the page. -->
+    <div class="main-container">
+
+        <!-- #InfoSection: This section provides information about sea turtles. -->
+        <div class="info-section">
+            <h1>Save Sea Turtles</h1>
+            <p>
+                Sea turtles have been around for a long time, dating back to the time of dinosaurs. 
+                They play a vital role in marine ecosystems, helping to maintain the health of sea grass beds 
+                and coral reefs. Sadly, many species of sea turtles are endangered today due to human activities.
+            </p>
+        </div>
+
+        <!-- #ImageUploadContainer: This is the main container for the image upload feature. -->
+        <div class="upload-container">
+            <!-- #Title: This displays the title of the upload section. -->
+            <h2>Upload Your Sea Turtle Image</h2>
+            
+            <!-- #UploadForm: This is the form through which users will upload their images. -->
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                
+                <!-- #FileChooser: This section allows users to choose a file from their system. -->
+                <div class="upload-box">
+                    <input type="file" name="image" id="file" class="inputfile">
+                    <label for="file" class="upload-label">Choose a file</label>
+                </div>
+                
+                <!-- #UploadButton: This is the button that users click to initiate the upload. -->
+                <button type="submit" class="upload-btn">Upload</button>
+            </form>
+        </div>
+    </div>
+
+
+

@@ -5,8 +5,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url('tur.jpg'); /* background image of sea turtles */
-    background-size: cover;
+    background-image: url('/assets/tur.jpg'); /* background image of sea turtles */
+    background-size: contain;
     background-position: center;
 }
 

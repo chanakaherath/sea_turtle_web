@@ -9,27 +9,27 @@
     <section class="sign-up">
       <p class="sign-up-para">Sign up in here</p>
       <!-- the form itself -->
-      <form class="sign-up-form">
+      <form class="sign-up-form" (ngSubmit)="onSubmit()">
         <div class="form-input">
-          <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+          <input type="text" name="firstName" id="first-name" placeholder="First Name" [(ngModel)]="firstName" required>
           <span>!</span>
           <p class="warning">First name cannot be empty</p>
         </div>
 
         <div class="form-input">
-          <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+          <input type="text" name="lastName" id="last-name" placeholder="Last Name" [(ngModel)]="lastName" required>
           <span>!</span>
           <p class="warning">Last name cannot be empty</p>
         </div>
 
         <div class="form-input">
-          <input type="email" name="email" id="email" placeholder="Email Address" required>
+          <input type="email" name="email" id="email" placeholder="Email Address" [(ngModel)]="email" required>
           <span>!</span>
           <p class="warning">Looks like this is not an email</p>
         </div>
 
         <div class="form-input">
-          <input type="Contact Number" name="Contact Number" id="Contact Number" placeholder="Contact Number" required>
+          <input type="Contact Number" name="contactNumber" id="Contact Number" placeholder="Contact Number" [(ngModel)]="contactNo" required>
           <span>!</span>
           <p class="warning">Please use numbers only</p>
         </div>
